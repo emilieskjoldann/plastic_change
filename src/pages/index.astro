@@ -5,8 +5,17 @@ import Button from '../components/Button.astro';
 <MainLayout title="Titel">
 	
 		 <!-- Hero Unit -->
-	
-		  <!-- Sektion 1 -->
+		 <section class="p-9">
+				<div>
+				<h1 class="text-[#FF0000] text-2xl">Single Use Sucks</h1>
+				<p class="text-[#1A4468] text-xs">Kom ind i kampen mod plastik</p>
+		 </div>
+		 <article class="flex justify-center items-center ">
+				<div class="pt-11 w-40"> <img src="/public/hero-unit.svg" alt=""></div>
+			</article>
+
+		</section> 
+		 <!-- Sektion 1 -->
 <section class="bg-[#EDFCF8] opacity-45 rounded-lg">
 	<article class="p-9 pt-18 pb-18">
 		<h2 class="text-[#FF0000] text-base font-bold">Plastikudfodringen</h2>
@@ -100,7 +109,7 @@ import Button from '../components/Button.astro';
 			</article>
 		</section>
 		<!-- Merch kop -->
-		<section>
-			<div class="pt-11"> <img src="/public/kopkrog.svg" alt=""></div>
+		<section class="flex justify-center items-center">
+			<div class="pt-11 w-40"> <img src="/public/kopkrog.svg" alt="merchandise kop"></div>
 		</section>
 </MainLayout>
