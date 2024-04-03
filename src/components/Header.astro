@@ -1,5 +1,52 @@
 ---
+
 ---
-<div>
-Header
+
+<div class="bg-white flex text-sm md:text-base h-96 md:h-20 pt-6 pl-10 md:flex-row">
+  <div class="menu flex flex-col md:flex-row gap-5 md:gap-20 opacity-0">
+    <div class="text-[#FF0000] font-medium font-work hover:text-white">
+      <a href="#front">Plastikudfordringen</a>
+    </div>
+    <div class="text-[#FF0000] font-medium font-work hover:text-white">
+      <a href="#viden">Plastikforureningens konsekvenser</a>
+    </div>
+    <div class="text-[#FF0000] font-medium font-work hover:text-white">
+      <a href="#hvordan">Vi kæmper for</a>
+    </div>
+    <div class="text-[#FF0000] font-medium font-work hover:text-white">
+      <a href="#registrer">7 gode råd mod plastikspild</a>
+    </div>
+    <div class="text-[#FF0000] font-medium font-work hover:text-white">
+      <a href="#registrer">Støt os</a>
+    </div>
+  </div>
+
+  <div>
+    <div class="burger-active flex flex-col ml-52 md:ml-72 opacity-0 pt-2">
+      <div class="bar w-8 h-0.5 bg-[#FF0000] rotate-45"></div>
+      <div class="bar w-8 h-0.5 bg-[#FF0000] rotate-140 absolute"></div>
+    </div>
+    <div class="burger-lukket flex flex-col gap-2 ml-52 md:ml-72">
+      <div class="bar w-8 h-0.5 bg-[#FF0000]"></div>
+      <div class="bar w-8 h-0.5 bg-[#FF0000]"></div>
+      <div class="bar w-8 h-0.5 bg-[#FF0000]"></div>
+    </div>
+  </div>
 </div>
+
+<script>
+  const menu = document.querySelector(".menu");
+  const burgeractive = document.querySelector(".burger-active");
+  const burgerlukket = document.querySelector(".burger-lukket");
+  burgerlukket.addEventListener("click", () => {
+    burgeractive.classList.remove("opacity-0");
+    menu.classList.remove("opacity-0");
+    burgerlukket.classList.add("opacity-0");
+  });
+
+  burgeractive.addEventListener("click", () => {
+    burgerlukket.classList.remove("opacity-0");
+    menu.classList.add("opacity-0");
+    burgeractive.classList.add("opacity-0");
+  });
+</script>
