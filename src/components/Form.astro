@@ -5,7 +5,7 @@ import Button from '../components/Button.astro';
 <form class="bg-white bg-opacity-80 rounded-2xl p-3 max-w-sm m-10">
   <h3 class="font-['Futura'] font-medium text-2xl text-[#FF0000]">Støt os</h3>
   <div class="grid grid-cols-4">
-    <span class=" text-[#FF0000] col-span-4 pt-2">Betalingsform:</span>
+    <span class=" text-[#FF0000] col-span-4 pt-4">Betalingsform:</span>
     <div class="col-span-2">
       <input class="bg-white bg-opacity-10 border-[#1A4468] " type="radio" id="mobilp" name="betaling" />
       <label class="text-xs text-[#1A4468]" for="mobilp"> Mobilpay</label>
@@ -15,7 +15,7 @@ import Button from '../components/Button.astro';
         <label class="text-xs text-[#1A4468]" for="kort">Betalingskort</label><br />
     </div>
 </div>
-<div class="grid grid-cols-3 py-4">
+<div class="grid grid-cols-3 py-6">
     <span class="text-[#FF0000] col-span-3">Beløb:</span>
     <div class="">
     <input class="bg-white bg-opacity-10 border-[#1A4468] " type="radio" id="engang" name="beløb" />
@@ -36,7 +36,7 @@ import Button from '../components/Button.astro';
 </div>
   <div class="grid grid-cols-2 gap-5">
     <div>
-      <label class="text-[#FF0000] py-5" for="fname">Fornavn:</label>
+      <label class="text-[#FF0000] " for="fname">Fornavn:</label>
       <input class="bg-white bg-opacity-10 border-[#1A4468] rounded-2xl w-32 h-8" type="text" id="fname" /><br />
     </div>
     <div>
