@@ -2,36 +2,34 @@
 
 ---
 
-<div class="flex px-5 md:px-10 mt-10 md:mt-0">
-  <div class="flex text-sm md:text-base md:h-20 md:flex-row grow">
-    <div class="menu flex flex-col md:flex-row gap-5 md:gap-20 md:self-center hidden">
-      <div class="text-[#FF0000] font-medium font-work hover:text-white">
-        <a href="#front">Plastikudfordringen</a>
-      </div>
-      <div class="text-[#FF0000] font-medium font-work hover:text-white">
-        <a href="#viden">Plastikforureningens konsekvenser</a>
-      </div>
-      <div class="text-[#FF0000] font-medium font-work hover:text-white">
-        <a href="#hvordan">Vi kæmper for</a>
-      </div>
-      <div class="text-[#FF0000] font-medium font-work hover:text-white">
-        <a href="#registrer">7 gode råd mod plastikspild</a>
-      </div>
-      <div class="text-[#FF0000] font-medium font-work hover:text-white">
-        <a href="#registrer">Støt os</a>
-      </div>
+<div class="flex text-sm md:text-base h-96 md:h-20 pt-6 pl-10 md:flex-row">
+  <div class="menu flex flex-col md:flex-row gap-5 md:gap-20 opacity-0">
+    <div class="text-[#FF0000] font-medium font-work hover:text-white">
+      <a href="#front">Plastikudfordringen</a>
     </div>
+    <div class="text-[#FF0000] font-medium font-work hover:text-white">
+      <a href="#viden">Plastikforureningens konsekvenser</a>
+    </div>
+    <div class="text-[#FF0000] font-medium font-work hover:text-white">
+      <a href="#hvordan">Vi kæmper for</a>
+    </div>
+    <div class="text-[#FF0000] font-medium font-work hover:text-white">
+      <a href="#registrer">7 gode råd mod plastikspild</a>
+    </div>
+    <div class="text-[#FF0000] font-medium font-work hover:text-white">
+      <a href="#registrer">Støt os</a>
+    </div>
+  </div>
 
-    <div class="flex grow justify-end md:self-center">
-      <div class="burger-active h-3 md:ml-72 hidden flex flex-col">
-        <div class="bar w-8 h-0.5 bg-[#FF0000] rotate-45"></div>
-        <div class="bar w-8 h-0.5 bg-[#FF0000] rotate-140 -mt-0.5"></div>
-      </div>
-      <div class="burger-lukket flex flex-col gap-2 md:ml-72">
-        <div class="bar w-8 h-0.5 bg-[#FF0000]"></div>
-        <div class="bar w-8 h-0.5 bg-[#FF0000]"></div>
-        <div class="bar w-8 h-0.5 bg-[#FF0000]"></div>
-      </div>
+  <div>
+    <div class="burger-active flex flex-col ml-52 md:ml-72 opacity-0 pt-2">
+      <div class="bar w-8 h-0.5 bg-[#FF0000] rotate-45"></div>
+      <div class="bar w-8 h-0.5 bg-[#FF0000] rotate-140 absolute"></div>
+    </div>
+    <div class="burger-lukket flex flex-col gap-2 ml-52 md:ml-72">
+      <div class="bar w-8 h-0.5 bg-[#FF0000]"></div>
+      <div class="bar w-8 h-0.5 bg-[#FF0000]"></div>
+      <div class="bar w-8 h-0.5 bg-[#FF0000]"></div>
     </div>
   </div>
 </div>
@@ -41,14 +39,14 @@
   const burgeractive = document.querySelector(".burger-active");
   const burgerlukket = document.querySelector(".burger-lukket");
   burgerlukket.addEventListener("click", () => {
-    burgeractive.classList.remove("hidden");
-    menu.classList.remove("hidden");
-    burgerlukket.classList.add("hidden");
+    burgeractive.classList.remove("opacity-0");
+    menu.classList.remove("opacity-0");
+    burgerlukket.classList.add("opacity-0");
   });
 
   burgeractive.addEventListener("click", () => {
-    burgerlukket.classList.remove("hidden");
-    menu.classList.add("hidden");
-    burgeractive.classList.add("hidden");
+    burgerlukket.classList.remove("opacity-0");
+    menu.classList.add("opacity-0");
+    burgeractive.classList.add("opacity-0");
   });
 </script>
