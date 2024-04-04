@@ -2,6 +2,77 @@
 import Button from "../components/Button.astro";
 ---
 
+<footer class="text-[#1A4468] bg-[url('/public/komnufoot.svg')] bg-no-repeat bg-cover w-full h-700 pt-24">
+  <div class="footer-indhold pt-250">
+    <div class="flex mb-20 justify-center">
+      <Button size="small">Tilmeld Nyhedsbrev</Button>
+    </div>
+
+    <div class="grid grid-cols-3 gap-52 m-5 place-items-center">
+      <div class="text-base">
+        <p class="mb-2">
+          <b>Mail:</b> info@plasticchange.org <br />
+        </p>
+        <p>
+          <b>Tlf:</b> +45 42 66 72 46
+        </p>
+      </div>
+
+      <div>
+        <p class="text-base mb-5 text-center"><b>Følg os på</b></p>
+        <div class="flex my-2 mx-5 justify-center">
+          <div class="flex space-x-4">
+            <img class="w-8 hover:scale-125" src="/instagram.svg" alt="" />
+            <img class="w-8 hover:scale-125" src="/linkedin.svg" alt="" />
+            <img class="w-8 hover:scale-125" src="/twitter.svg" alt="" />
+            <img class="w-8 hover:scale-125" src="/youtube.svg" alt="" />
+            <img class="w-8 hover:scale-125" src="/facebook.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="text-base mb-2 mt-2">
+          <b>Telefontid:</b>
+        </p>
+        <p class="text-base">
+          Mandag - Fredag: <br />
+          10:00 – 15:00
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- 
+<div class="text-[#1A4468] bg-[url('/public/footer1.svg')] bg-no-repeat w-full h-64 pt-24 lg:">
+  <p class="text-xs text-center underline decoration-1">Tilmeld nyhedsbrev</p>
+  <div class="grid grid-cols-2 gap-3 m-5 place-items-center">
+    <p class="text-xs">
+      Mail. info@plasticchange.org <br />
+      Tlf. +45 42 66 72 46
+    </p>
+    <p class="text-xs">
+      Telefontid. <br />
+      Mandag – Fredag, <br />
+      10:00 – 15:00
+    </p>
+  </div>
+  <p class="text-xs text-center">Følg os på</p>
+  <div class="flex my-2 mx-5 justify-center">
+    <div class="flex space-x-4">
+      <img class="w-6" src="/public/instagram.svg" alt="" />
+      <img class="w-6" src="/public/linkedin.svg" alt="" />
+      <img class="w-6" src="/public/twitter.svg" alt="" />
+      <img class="w-6" src="/public/youtube.svg" alt="" />
+      <img class="w-6" src="/public/facebook.svg" alt="" />
+    </div>
+  </div>
+</div>
+-->
+
+--- import Button from "../components/Button.astro"; ---
+
 <footer class="text-[#1A4468] bg-[url('/public/komnufoot.svg')] bg-no-repeat bg-cover w-full md:h-700 pt-24">
   <div class="footer-indhold pt-20 md:pt-250">
     <div class="flex mb-7 md:mb-20 justify-center">
@@ -22,11 +93,11 @@ import Button from "../components/Button.astro";
         <p class="text-xs md:text-base mb-5 text-center"><b>Følg os på</b></p>
         <div class="flex my-2 mx-5 justify-center">
           <div class="flex space-x-4">
-            <img class="w-8 hover:scale-125" src="/public/instagram.svg" alt="" />
-            <img class="w-8 hover:scale-125" src="/public/linkedin.svg" alt="" />
-            <img class="w-8 hover:scale-125" src="/public/twitter.svg" alt="" />
-            <img class="w-8 hover:scale-125" src="/public/youtube.svg" alt="" />
-            <img class="w-8 hover:scale-125" src="/public/facebook.svg" alt="" />
+            <img class="w-4 md:w-8 hover:scale-125" src="/public/instagram.svg" alt="" />
+            <img class="w-4 md:w-8 hover:scale-125" src="/public/linkedin.svg" alt="" />
+            <img class="w-4 md:w-8 hover:scale-125" src="/public/twitter.svg" alt="" />
+            <img class="w-4 md:w-8 hover:scale-125" src="/public/youtube.svg" alt="" />
+            <img class="w-4 md:w-8 hover:scale-125" src="/public/facebook.svg" alt="" />
           </div>
         </div>
       </div>
