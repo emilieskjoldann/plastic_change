@@ -2,7 +2,7 @@
 import Button from '../components/Button.astro';
 ---
 
-<form class="bg-white bg-opacity-80 rounded-2xl p-3 max-w-sm m-10">
+<form class="bg-white bg-opacity-80 rounded-2xl pt-6 pb-6 pl-6 pr-6 max-w-sm lg:m-10">
   <h3 class="font-['Futura'] font-medium text-2xl text-[#FF0000]">Støt os</h3>
   <div class="grid grid-cols-4">
     <span class=" text-[#FF0000] col-span-4 pt-4">Betalingsform:</span>
@@ -31,25 +31,25 @@ import Button from '../components/Button.astro';
 </div>
 <div class="py-3">
     <label for="quantity"></label>
-    <input class="bg-white bg-opacity-10 border-[#1A4468] rounded-2xl h-8" placeholder="beløb" type="number" id="quantity" name="quantity" />
+    <input class="bg-white bg-opacity-10 border-[#1A4468] rounded-2xl w-56 lg:w-72 h-8" placeholder="beløb" type="number" id="quantity" name="quantity" />
 </div>
 </div>
   <div class="grid grid-cols-2 gap-5">
     <div>
       <label class="text-[#FF0000] " for="fname">Fornavn:</label>
-      <input class="bg-white bg-opacity-10 border-[#1A4468] rounded-2xl w-32 h-8" type="text" id="fname" /><br />
+      <input class="bg-white bg-opacity-10 border-[#1A4468] rounded-2xl w-28 lg:w-32 h-8" type="text" id="fname" /><br />
     </div>
     <div>
       <label class="text-[#FF0000]" for="ename">Efternavn:</label>
-      <input class="bg-white bg-opacity-10 border-[#1A4468] rounded-2xl w-32 h-8" type="text" id="ename" /><br />
+      <input class="bg-white bg-opacity-10 border-[#1A4468] rounded-2xl w-28 lg:w-32 h-8" type="text" id="ename" /><br />
     </div>
     <div>
       <label class="text-[#FF0000]" for="mail">E-mail:</label>
-      <input class="bg-white bg-opacity-10 border-[#1A4468] rounded-2xl w-32 h-8" type="text" id="mail" />
+      <input class="bg-white bg-opacity-10 border-[#1A4468] rounded-2xl w-28 lg:w-32 h-8" type="text" id="mail" />
     </div>
     <div>
       <label class="text-[#FF0000]" for="tlf">Telefon:</label>
-      <input class="bg-white bg-opacity-10 border-[#1A4468] rounded-2xl w-32 h-8" type="text" id="tlf" />
+      <input class="bg-white bg-opacity-10 border-[#1A4468] rounded-2xl w-28 lg:w-32 h-8" type="text" id="tlf" />
     </div>
   </div>
   <div class="mt-5 flex justify-center">
